@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tabfonts">
+        <item name="fontFamily"> @font/montserrat_bold </item>
+        <item name="android:textColor"> @color/darkblue</item>
+        <item name="android:textSize"> 10dp </item>
+        <item name="tabIndicatorColor"> @color/darkblue </item>
+
+    </style>
+    <style name="tabitems">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+</resources>

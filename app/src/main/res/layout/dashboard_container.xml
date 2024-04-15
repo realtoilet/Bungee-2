@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/embossed_rounded_background">
+
+<ImageView
+android:id="@+id/iv"
+android:layout_width="170dp"
+android:layout_height="140dp"
+android:layout_gravity="center_horizontal"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"
+    android:src="@drawable/ic_launcher_background" />
+
+
+<TextView
+android:id="@+id/name"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+    android:paddingTop="10dp"
+    android:text="Item Name"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:fontFamily="@font/montserrat_bold" />
+
+<TextView
+android:id="@+id/price"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+    android:paddingTop="8dp"
+    android:text="Price"
+    android:textColor="@color/lighterblue"
+    android:textSize="12sp"
+    android:fontFamily="@font/montserrat_bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp">
+
+        <TextView
+            android:id="@+id/ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingTop="8dp"
+            android:paddingEnd="10dp"
+            android:text="Rating"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingTop="8dp"
+            android:paddingEnd="10dp"
+            android:text="Sold"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.883"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
